@@ -11,11 +11,12 @@ import Footer from './assets/Components/Footer/Footer'
 import VideoPlayer from './assets/Components/VideoPlayer/VideoPlayer'
 
 const App = () => {
-
+  const basename = import.meta.env.MODE === "production" ? "/Outsiders" : "";
+  
   const [playState, setPlayState] = useState(false)
 
   return (
-    <div>
+    <div basename={basename}>
       <Navbar/>
       <Hero/>
       <div className="container">
