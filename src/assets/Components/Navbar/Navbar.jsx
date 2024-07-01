@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react'
 import {Link} from 'react-scroll';
 
 import './Navbar.css'
-import logo from '../../Logo16-9.png'
-import menu_burger from '../../Menu_burger.png'
+import logo from '../../img/Logo16-9.png'
+import menu_burger from '../../img/Menu_burger.png'
 
 export const Navbar = () => {
 

@@ -1,10 +1,10 @@
 import React from 'react'
 import './Contact.css'
-import contact_icon from './../../Contact_icon.png'
-import linkedin_icon from './../../Linkedin_icon.png'
-import youtube_icon from './../../Youtube_icon.png'
-import instagram_icon from './../../Instagram_icon.png'
-import tiktok_icon from './../../Tiktok_icon.png'
+import contact_icon from './../../img/Contact_icon.png'
+import linkedin_icon from './../../img/Linkedin_icon.png'
+import youtube_icon from './../../img/Youtube_icon.png'
+import instagram_icon from './../../img/Instagram_icon.png'
+import tiktok_icon from './../../img/Tiktok_icon.png'
 
 const Contact = () => {
 

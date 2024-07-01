@@ -1,11 +1,11 @@
 import React from 'react'
 import './Programs.css'
-import program_1 from './../../Program_1.jpg'
-import program_2 from './../../Program_2.jpg'
-import program_3 from './../../Program_3.jpg'
-import program_icon_1 from './../../Program_1N.png'
-import program_icon_2 from './../../Program_2N.png'
-import program_icon_3 from './../../Program_3N.png'
+import program_1 from './../../img/Program_1.jpg'
+import program_2 from './../../img/Program_2.jpg'
+import program_3 from './../../img/Program_3.jpg'
+import program_icon_1 from './../../img/Program_1N.png'
+import program_icon_2 from './../../img/Program_2N.png'
+import program_icon_3 from './../../img/Program_3N.png'
 
 
 const Programs = () => {

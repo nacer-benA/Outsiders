@@ -1,11 +1,11 @@
 import React, { useRef } from 'react'
 import './Testimonials.css'
-import white_arrow from './../../White_arrow.png'
-import back_arrow from './../../Back_arrow.png'
-import slide_img1 from './../../Slide-img1.jpg'
-import slide_img2 from './../../Slide-img2.jpg'
-import slide_img3 from './../../Slide-img3.jpg'
-import slide_img4 from './../../Slide-img4.jpg'
+import white_arrow from './../../img/White_arrow.png'
+import back_arrow from './../../img/Back_arrow.png'
+import slide_img1 from './../../img/Slide-img1.jpg'
+import slide_img2 from './../../img/Slide-img2.jpg'
+import slide_img3 from './../../img/Slide-img3.jpg'
+import slide_img4 from './../../img/Slide-img4.jpg'
 
 const Testimonials = () => {
 

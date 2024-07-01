@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
 import './Campus.css'
-import campus_img1 from './../../Campus_img1.png'
-import campus_img2 from './../../Campus_img2.png'
-import campus_img3 from './../../Campus_img3.png'
-import campus_img4 from './../../Campus_img4.png'
-import plaquette_outsiders from './../../Plaquette_outsiders.pdf'
-import modal_img1 from './../../Modal_img1.png'; 
-import modal_img2 from './../../Modal_img2.png';
-import modal_img3 from './../../Modal_img3.png';
-import modal_img4 from './../../Modal_img4.png';
+import campus_img2 from './../../img/Campus_img2.png'
+import campus_img1 from './../../img/Campus_img1.png'
+import campus_img3 from './../../img/Campus_img3.png'
+import campus_img4 from './../../img/Campus_img4.png'
+import plaquette_outsiders from './../../img/Plaquette_outsiders.pdf'
+import modal_img1 from './../../img/Modal_img1.png'; 
+import modal_img2 from './../../img/Modal_img2.png';
+import modal_img3 from './../../img/Modal_img3.png';
+import modal_img4 from './../../img/Modal_img4.png';
 
 const Campus = () => {
 
