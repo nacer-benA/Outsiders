@@ -12,8 +12,10 @@
     "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
+    "framer-motion": "^11.2.14",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.0",
     "react-scroll": "^1.9.0"
   },
   "devDependencies": {

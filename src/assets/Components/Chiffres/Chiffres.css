@@ -1,0 +1,25 @@
+.container-numbers{
+    margin: 5% 5%;
+    width: 90%;
+    height: 60vh;
+    border: 20px solid rgba(123, 120, 120, 0.783);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.number{
+    margin: 0;
+    width: 50%;
+    font-family: sofia-pro, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 50px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
