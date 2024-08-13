@@ -1,21 +1,25 @@
-import React from 'react'
-import {Link} from 'react-scroll';
+import React from 'react';
+import { Link } from 'react-scroll';
+import './Hero.css';
 
-import './Hero.css'
+const Hero = ({ title, text, buttonText, backgroundImage }) => {
+  const heroStyle = {
+    backgroundImage: `linear-gradient(rgba(8,0,58,0.7),rgba(8,0,58,0.7)), url(${backgroundImage})`,
+  };
 
-const Hero = () => {
   return (
-    <div className='hero container'>
-        <div className="hero-text">
-            <h1>OUTSIDERS CONSULTING</h1>
-            <p>Cabinet de conseil en Innovation Sociale
-            Créateur de valeur humaine ajoutée</p>
-            <button className="btn"><Link to='program' smooth={true} offset={-280} duration={700}>
-            Libère l’Outsiders qui est en toi</Link>
-            </button>
-        </div>
+    <div className='hero container' style={heroStyle}>
+      <div className="hero-text">
+        <h1>{title}</h1>
+        <p>{text}</p>
+        <button className="btn">
+          <Link to='program' smooth={true} offset={-280} duration={700}>
+            {buttonText}
+          </Link>
+        </button>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

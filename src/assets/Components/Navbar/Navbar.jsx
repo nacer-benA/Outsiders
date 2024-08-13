@@ -28,7 +28,7 @@ export const Navbar = () => {
         <li><Link to="/">Notre vision</Link></li>
         <li><Link to="/">Interviews</Link></li>
         <li><Link to="/">Nos packs</Link></li>
-        <li><Link to="/apropos">A propos</Link></li>
+        <li><Link to="/about">A propos</Link></li>
         <li><Link to="/contact" className='btn'>Nous contacter</Link></li>
       </ul>
       <img src={menu_burger} alt="" className='menu-icon' onClick={toggleMenu} />

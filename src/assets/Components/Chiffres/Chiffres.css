@@ -4,6 +4,7 @@
     height: 60vh;
     border: 20px solid rgba(123, 120, 120, 0.783);
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     grid-auto-rows: minmax(100px, auto);
