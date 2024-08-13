@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom'; // Importer Link depuis react-router-dom
+import { motion, useAnimation } from 'framer-motion';
+
 
 import './About.css';
 import CeoImage from '../../img/Ceo.jpg';
@@ -9,6 +11,37 @@ import IconLvlup from '../../img/Icon_lvlup.png';
 import IconValid from '../../img/Icon_valid.png';
 
 const About = () => {
+  const cardVariants = {
+    hidden: { opacity: 0, x: -200 },
+    visible: { opacity: 1, x: 0 }
+  };
+
+  const [inView, setInView] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setInView(true);
+        }
+      },
+      {
+        threshold: 0.1
+      }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, []);
+
   return (
     <>
       <div className="first-box">
@@ -53,31 +86,47 @@ const About = () => {
       <div className="second-box">
         <h1>Ce que nous faisons</h1>
 
-        <div className="cards-container">
-          <div className="card">
+        <div className="cards-container" ref={ref}>
+          <motion.div className='card'
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            variants={cardVariants}>
             <img src={IconLike} alt="" />
             <h2>Conseil en innovation sociale
             </h2>
             <p>Outsiders est un cabinet de conseil en innovation sociale.
             Nous accompagnons les entreprises dans leur stratégie d’engagement et la mise en place du volet R.S.E.</p>
-            </div>
-          <div className="card">
+            </motion.div>
+          <motion.div className='card'
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            variants={cardVariants}>
             <img src={IconLight} alt="" />
             <h2>Le workshop Presse Féminine
             </h2>
             <p>Au plus près des besoins de terrain, nous proposons une solution clé en main aux entreprises qui souhaitent s’engager auprès des populations éloignées de l’emploi; le workshop Presse Féminine.</p>
-            </div>
-          <div className="card">
+            </motion.div>
+          <motion.div className='card'
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            variants={cardVariants}>
             <img src={IconLvlup} alt="" />
             <h2>L’empowerment</h2>
             <p>Véritable ode à l’empowerment, ce programme dédié exclusivement aux femmes éloignées de l’emploi et issues des quartiers prioritaires de la ville ou des zones rurales, remobilise vers une meilleure version de soi.</p>
-            </div>
-          <div className="card">
+            </motion.div>
+          <motion.div className='card'
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            variants={cardVariants}>
             <img src={IconValid} alt="" />
             <h2>Faites de vos échecs une force</h2>
             <p>L’emploi n’est plus l’unique cible, mais un des objectifs.
 Nous replaçons ces femmes au coeur de leur processus décisionnel, afin de leur permettre de faire de leurs singularité un atout et de leurs échecs une force.</p>
-            </div>
+            </motion.div>
         </div>
       </div>
       <div className="link">

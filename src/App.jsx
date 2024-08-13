@@ -16,7 +16,7 @@ import About from './assets/Components/About/About';
 
 import heroImage1 from './assets/img/Hero.jpg';
 import heroImage2 from './assets/img/Hero.jpg';
-import heroImage3 from './assets/img/Preview.png';
+import heroImage3 from './assets/img/About.png';
 
 const App = () => {
   const basename = import.meta.env.MODE === 'production' ? '/Outsiders' : '';
