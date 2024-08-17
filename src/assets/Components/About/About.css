@@ -109,7 +109,6 @@
 }
 .link button:hover{
     background: black;
-    scale: 1.2;
 }
 
 @media (max-width: 768px) {
